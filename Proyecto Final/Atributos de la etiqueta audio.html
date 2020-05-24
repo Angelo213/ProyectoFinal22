@@ -1,0 +1,49 @@
+<html>
+<head>
+<body bgcolor="purple">
+<font color="Red"</font>
+<h3>
+</h3>
+<font size="60"</font>
+<P ALIGN="LEFT"><body><h4>  <a href="practica3pa.html  "> <img src="flecha volver.png" height="45px" widht="45px"> </a><h/4></b>
+<center><tittle><b> Atributos de la etiqueta audio</b></tittle>
+
+<table border=1 width=100% bgcolor=lime>
+<tr bgcolor=red>
+<td>autoplay</td><td> autobuffer</td><td> buffered</td><td> controls</td><td>loop</td><td>mozCurrentSampleOffset</td><td>preload</td><td>src</td></tr>
+
+<tr>
+
+
+<td> Un atributo booleano; si se especifica (incluso aunque el valor sea "false"), el sonido comenzará a reproducirse automáticamente en cuanto sea posible, sin detenerse para terminar de cargar los datos.</td>
+
+<td>Un atributo booleano; si se especifica, el sonido comenzará a reproducirse automáticamente, incluso aunque no se haya configurado para la reproducción automática. Esto continuará hasta que la caché de medios esté llena o se haya descargado el archivo de audio completo, lo que suceda primero. Debería usarse sólo si se espera que el usuario elija reproducir el audio; por ejemplo si el usuario ha navegado hasta una página usando un vínculo de "Reproducir este audio". Este atributo se eliminó de Gecko 2.0 (Firefox 4 / Thunderbird 3.3 / SeaMonkey 2.1) en favor del atributo preload.</td>        
+
+
+ <td>Un atributo que se puede leer para determinar qué intervalos de tiempo del multimedia se han almacenado en búfer. Este atributo contiene un objeto TimeRanges.</td>             
+
+
+<td>Si está presente este atributo, el navegador ofrecerá controles para permitir que el usuario controle la reproducción de audio, incluyendo volumen, búsqueda y pausar/reanudar reproducción.</td>        
+
+
+<td>Un atributo booleano; si se especifica, al alcanzar el final del audio, realizaremos la búsqueda automáticamente hasta el principio.</td>
+
+
+<td>La posición de desplazamiento, que se especifica como el número de muestras desde el comienzo de la secuencia de audio, en la cual el audio se está reproduciendo actualmente.</td>
+
+
+<td>El objetivo de este atributo enumerado es proporcionar una sugerencia al navegador sobre qué cree el autor que proporcionará la mejor experiencia para el usuario . Puede tener uno de los siguientes valores:
+none: sugiere bien que el autor cree que el usuario no tendrá que consultar ese video, bien que el servidor desea minimizar su tráfico; es decir, esta sugerencia indica que no se debe almacenar en caché este video;
+metadata: sugiere que aunque el autor piensa que el usuario no tendrá que consultar ese video, es razonable capturar los metadatos (p. ej. longitud);
+auto: sugiere que el usuario necesita tener prioridad; es decir, esta sugerencia indica que, si es necesario, se puede descargar el video completo, incluso aunque el usuario no vaya a usarlo;
+the empty string: que es sinónimo del valor auto.
+Si no está configurado, su valor predeterminado está definido por el navegador (es decir, cada navegador puede elegir su propio valor predeterminado), aunque la especificación aconseje que se establezca a metadatos.
+
+<td>La URL del audio que se va a insertar. Está sujeta a los Controles de acceso HTTP. Es opcional; en su lugar puedes usar el elemento source dentro del bloque de audio para especificar el audio que se va a insertar.
+Las compensaciones de tiempo se especifican como valores float que indican el número de segundos que se va a compensar. </td></td></tr>
+<br>
+<font color="#008080"</font>
+<a href="formato de audio que soporta.html"><input type='button' name='boton' value='siguiente' style='width:120px; height:50px'>
+
+
+

@@ -1,0 +1,89 @@
+<html>
+   <head>
+      <title> Formatos de video</title>
+<a href="Practica3pa.html  "> <img src="flecha volver.png" height="50px" widht="50px"> </a><h/4></b>
+<font color="Purple"</font>
+<body bgcolor="Yellow">
+<h3>
+<center><body>1. El marcado
+<br>
+<br>
+<font color="Red"</font>
+En este fragmento se utiliza la etiqueta <source>, que permite incluir varios formatos como tipos alternativos en caso de que el navegador del usuario no admita alguno de ellos. En la siguiente sección se ofrece más información sobre este tema.
+
+También se puede utilizar un único formato de vídeo que haga que la sintaxis sea muy parecida a la de la etiqueta de imagen. Esta sintaxis será la más utilizada en un futuro próximo cuando todos los navegadores admitan un formato de vídeo común.
+<br>
+<br>
+<font color="Purple"</font>
+2. Formatos de vídeo
+<br>
+<font color="Red"</font>
+El concepto de formato de vídeo se puede entender como un archivo zip que contiene secuencias de vídeo y secuencias de audio. Los tres formatos que se deben tener en cuenta para la Web son WebM, MP4 y OGV:
+
+.mp4 = H.264 + AAC
+.ogg/.ogv = Theora + Vorbis
+.webm = VP8 + Vorbis
+<br>
+La velocidad de evolución de la etiqueta de vídeo es verdaderamente alentadora. Hace tan solo un año, el único navegador que admitía la etiqueta de vídeo en su versión estable era Safari. Ahora, todos los navegadores actuales admiten vídeo HTML5, incluido IE9, la última versión del navegador Internet Explorer. En cuanto a los códecs, Firefox, Chrome y Opera han acordado admitir WebM como formato de vídeo común a través del proyecto WebM. Internet Explorer también admitirá ese formato si el códec se instala en el ordenador (esperemos que este requisito no sea imprescindible en el futuro).
+<br>
+<br>
+<font color="Purple"</font>
+3. ¿Qué pasa con las versiones actuales de IE que no admiten la etiqueta de vídeo?
+<br>
+<font color="Red"</font>
+Flash también puede ser una solución alternativa. Según cuál sea el formato del vídeo, es posible que haya que volver a codificarlo con un formato compatible para el reproductor Flash. La buena noticia es que Adobe se ha comprometido a admitir el formato WebM en su reproductor Flash, aunque no se sabe con certeza cuándo se podrá empezar a utilizar. Sin embargo, el mayor inconveniente que tiene esta solución en comparación con la del complemento Chrome Frame es que se obtiene el reproductor Flash como versión degradada de la interfaz de usuario personalizada o de las funciones mejoradas que se hayan utilizado para la etiqueta de vídeo. En el tutorial Guía rápida de implementación de la etiqueta de audio de HTML5, se ofrece información detallada sobre esta técnica.
+<br>
+<br>
+<font color="Purple"</font>
+4. Codificación de los vídeos
+<font color="Red"</font>
+<br>
+Si necesitas codificar tus vídeos en los formatos mencionados en la sección anterior, puedes utilizar el conversor Miro Video Converter para Windows y Mac para conseguir fácilmente el formato que necesites. El programa no permite hacer muchos cambios de configuración, pero ofrece los formatos más comunes de la Web, incluidos los tres formatos utilizados en este tutorial. En realidad, este software es un contenedor de ffmpeg y ffmpeg2theora que se puede utilizar en Windows, Mac y Linux desde la línea de comandos (especificando más parámetros en caso necesario). En divintohtml5.org, se ofrece más información sobre esta herramienta.
+<br>
+<br>
+<font color="Purple"</font>
+5. La parte divertida
+<font color="Red"</font>
+<br>
+Como se indicó en la introducción, la principal ventaja de la pertenencia de la etiqueta de vídeo a la familia HTML5 es la posibilidad de integración con las demás capas de la pila de desarrollo web. En los siguientes ejemplos se ofrece una visión general de lo que se puede hacer con ella.
+<br>
+<br>
+<font color="Purple"</font>
+5.1. Vídeo + otros elementos HTML
+<font color="Red"</font>
+<br>
+Todos los atributos HTML comunes se pueden utilizar ahora en el reproductor de vídeo. Por ejemplo, en el fragmento que aparece a continuación, se utiliza tabindex para poder acceder a los controles del reproductor. Hay algunos atributos nuevos que se pueden utilizar en la etiqueta de vídeo que también son comunes a la etiqueta de audio, como el atributo de reproducción continua (loop) y el de reproducción automática (autoplay).
+<br>
+<br>
+<font color="Purple"</font>
+5.2. Vídeo + JavaScript
+<font color="Red"</font>
+<br>
+La etiqueta de vídeo incluye una serie de atributos y de métodos que permiten tener un buen control del vídeo mediante el código JavaScript utilizado. Puedes verlos en tiempo real en este ejemplo.
+
+Al igual que ocurre con los demás elementos HTML, se pueden añadir eventos comunes a la etiqueta de vídeo (por ejemplo, eventos del ratón, eventos de arrastre, enfoque, etc.), pero el elemento de vídeo incluye una serie de nuevos eventos que permiten detectar (y controlar) el momento de reproducción, pausa o finalización del vídeo.
+<br>
+<br>
+<font color="Purple"</font>
+5.3. Vídeo + CSS
+<br>
+<font color="Red"</font>
+Como podrás imaginarte, se puede aplicar estilo a la etiqueta de vídeo con propiedades CSS tradicionales (p. ej., bordes, opacidad, etc.), ya que esta etiqueta es uno de los elementos principales del DOM, pero lo mejor es que también se le pueden aplicar las últimas propiedades CSS3, como reflejos, máscaras, gradientes, transformaciones, transiciones y animaciones.
+<br>
+<br>
+<font color="Purple"</font>
+5.4. Vídeo + canvas
+<font color="Red"</font>
+<br>
+El elemento canvas es otro elemento HTML5 que ofrece muchas posibilidades cuando se utiliza junto con la etiqueta de vídeo.
+<br>
+En el ejemplo que aparece a continuación, se utilizan dos funciones del elemento <.canvas.> para importar y exportar imágenes. La primera es el método drawImage, que permite importar imágenes de tres fuentes diferentes: un elemento de imagen, otro elemento canvas y un elemento <.video.>. Esto significa que, cada vez que se ejecute este método, el marco actual del vídeo se importará y se mostrará en el elemento canvas.
+<br>
+<br>
+<font color="Purple"</font>
+5.5. Vídeo + SVG
+<br>
+<font color="Red"</font>
+SVG permite mostrar y manipular gráficos vectoriales mediante programación, pero también incluye más funciones, como los efectos de filtro SVG. Estos filtros permiten elegir un elemento DOM específico y aplicarle algunos efectos especiales como los de mosaicos, difuminado, composición, etc. En el momento de escribir este artículo (agosto de 2010), Firefox 4 e IE9 admiten la integración de SVG, que permite utilizar HTML y CSS en el elemento de vídeo (en este ejemplo, se utilizan JavaScript y el elemento canvas para garantizar también el funcionamiento en navegadores que aún no admitan la integración de SVG):
+<br>
+<td><a href="Atributos de la etiqueta video.html"><input type='button' name='boton' value='Siguiente' style='width:120px; height:50px'></td>
